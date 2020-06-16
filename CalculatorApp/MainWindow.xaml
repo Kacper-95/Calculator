@@ -1,0 +1,41 @@
+﻿<Window x:Class="CalculatorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculatorApp"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="Calculator v1" Height="500" Width="400">
+    <Grid>
+        <TextBox Name="TB" Text="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="21,45,21,0" VerticalAlignment="Top" Height="45" Background="#FFECECEC" BorderBrush="Black" TextOptions.TextHintingMode="Animated" FontWeight="SemiBold" FontSize="22"/>
+        <Button Name="one" Click="One_Click" Content="1" HorizontalAlignment="Left" Margin="21,127,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="two" Click="Two_Click" Content="2" HorizontalAlignment="Left" Margin="111,127,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="three" Click="Three_Click" Content="3" HorizontalAlignment="Left" Margin="201,127,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+
+        <Button Name="four" Content="4" Click="Four_Click" HorizontalAlignment="Left" Margin="21,197,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="fife" Content="5" Click="Fife_Click" HorizontalAlignment="Left" Margin="111,197,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="six" Content="6" Click="Six_Click" HorizontalAlignment="Left" Margin="201,197,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+
+        <Button Name="seven" Click="Seven_Click" Content="7" HorizontalAlignment="Left" Margin="21,267,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="eight" Click="Eight_Click" Content="8" HorizontalAlignment="Left" Margin="111,267,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="nine" Click="Nine_Click" Content="9" HorizontalAlignment="Left" Margin="201,267,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="zero" Click="Zero_Click" Content="0" HorizontalAlignment="Left" Margin="21,337,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+
+
+        <Button Name="multi" Click="Multi_Click" Content="*" HorizontalAlignment="Left" Margin="291,127,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="add" Click="Add_Click" Content="+" HorizontalAlignment="Left" Margin="291,197,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="sub" Click="Sub_Click" Content="-" HorizontalAlignment="Left" Margin="291,267,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="div" Click="Div_Click" Content="/" HorizontalAlignment="Left" Margin="291,337,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+
+        <Button Name="equal" Click="Equal_Click" Content="=" HorizontalAlignment="Left" Margin="201,407,0,0" VerticalAlignment="Top" Width="160" Height="50"/>
+
+        <Label Name="label" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Content="0" Margin="21,16,21,0" VerticalAlignment="Top" Background="#FFE4E4E4"/>
+        <Button Name="r" Foreground="Red" Click="R_Click" Content="C" HorizontalAlignment="Left" Margin="111,337,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="dot" Click="Dot_Click" Content="," HorizontalAlignment="Left" Margin="201,337,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="sqrt" Click="Sqrt_Click" Content="√" HorizontalAlignment="Left" Margin="111,407,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+        <Button Name="exp" Click="Exp_Click" Content="x^y" HorizontalAlignment="Left" Margin="21,407,0,0" VerticalAlignment="Top" Width="70" Height="50"/>
+
+    </Grid>
+</Window>
